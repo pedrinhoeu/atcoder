@@ -6,9 +6,9 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    long long n, resp = 0, a, INF = 1000000000;
+    long long n, resp = 0, a;
     cin >> n;
-    vector<long long> nums(INF, 0);
+    bitset<1000000000> nums;
     while(n--){
         cin >> a;
         if(nums[a-1] == 0){
