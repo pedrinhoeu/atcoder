@@ -3,10 +3,9 @@ using namespace std;
 typedef long long ll;
 
 void solvetask(){
-    ll h, v;
-    cin >> h >> v;
-    if(h%3 == 0 or v%3 == 0) cout << 0 << "\n";
-    
+    ll n;
+    cin >> n;
+    cout << 48-n << "\n";
 }
 
 int main(){

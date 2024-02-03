@@ -3,10 +3,11 @@ using namespace std;
 typedef long long ll;
 
 void solvetask(){
-    ll h, v;
-    cin >> h >> v;
-    if(h%3 == 0 or v%3 == 0) cout << 0 << "\n";
-    
+    ll a, b, c, d;
+    cin >> a >> b >> c >> d;
+    if(a+b == c+d) cout << "Balanced\n";
+    else if(a+b > c+d) cout << "Left\n";
+    else cout << "Right\n";
 }
 
 int main(){

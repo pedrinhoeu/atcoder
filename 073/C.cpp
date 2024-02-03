@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
-
 using namespace std;
+typedef long long ll;
 
 int main(){
     ios::sync_with_stdio(0);
@@ -8,16 +8,16 @@ int main(){
 
     long long n, resp = 0, a;
     cin >> n;
-    bitset<1000000000> nums;
+    map<ll, bool> nums;
     while(n--){
         cin >> a;
-        if(nums[a-1] == 0){
+        if(!nums[a]){
             resp += 1;
-            nums[a-1] = 1;
+            nums[a] = true;
         }
         else{
             resp -= 1;
-            nums[a-1] = 0;
+            nums[a] = false;
         }
     }
     cout << resp << endl;
